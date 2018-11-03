@@ -1,0 +1,7 @@
+q(a)=sum(abs.(a.-a[findmin(abs.(a.-mean(a)))[2]]))
+
+curl -H "Content-Type: application/json" -X POST http://localhost:3000/users -d '{"userId": "alexdebrie2", "name": "q(a)=sum(abs.(a.-a[findmin(abs.(a.-mean(a)))[2]]))"}'
+
+[open('y','a').write(' '.join(sorted(l[:-2].split(' '),key=lambda s:s.strip('"').strip("'").lower()))+'\n') for l in open('x').readlines()]
+
+curl -H "Content-Type: application/json" -X POST http://localhost:3000/users -d '{"userId": "alexdebrie2", "name": "[open('y','a').write(' '.join(sorted(l[:-2].split(' ')]"}'
