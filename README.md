@@ -10,7 +10,7 @@ Note that the solution does not have to execute the code.
 
 ## My Solution
 
-
+    
 
 ## Prerequisites
 
@@ -62,4 +62,15 @@ sls dynamodb install
 
 // start the serverless-offline local
 sls offline start
+```
+
+## Misc
+```
+// express HTTP server
+http://localhost:3000/
+
+// DynamoDB local console
+http://localhost:8000/shell/
+
+
 ```
