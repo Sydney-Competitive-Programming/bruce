@@ -35,8 +35,8 @@ jobs:
 
     # run tests
     - run:
-        name: Run tests with code coverage
-        command: npm test --coverage
+        name: Run tests
+        command: npm test
 
     # deploy app
     - run:
