@@ -26,12 +26,12 @@ jobs:
         # fallback to using the latest cache if no exact match is found
         - v1-dependencies-
 
-    - run: yarn install
-
-    - save_cache:
-        paths:
-        - node_modules
-        key: v1-dependencies-{{ checksum "package.json" }}
+    # install sls
+    - run:
+        name: Install Serverless CLI and dependencies
+        command: |
+          sudo npm i -g serverless
+          npm install
 
     # run tests
     - run:
@@ -43,4 +43,7 @@ jobs:
         name: Deploy application
         command: sls deploy -v
 
-
+    - save_cache:
+        paths:
+        - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
