@@ -51,17 +51,17 @@ resources:
       Properties:
         AttributeDefinitions:
           -
-            AttributeName: submissionId
+            AttributeName: playerId
             AttributeType: S
           -
-            AttributeName: date
-            AttributeType: S
+            AttributeName: challengeId
+            AttributeType: N
         KeySchema:
           -
-            AttributeName: submissionId
+            AttributeName: playerId
             KeyType: HASH
           -
-            AttributeName: date
+            AttributeName: challengeId
             KeyType: RANGE
         ProvisionedThroughput:
           ReadCapacityUnits: 1

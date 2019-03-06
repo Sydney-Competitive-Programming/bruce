@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "launch": "npm start",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www --ignore node_modules/ -e js,html,css",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -14,11 +17,26 @@
     "body-parser": "^1.18.3",
     "dateformat": "^3.0.3",
     "express": "^4.16.3",
-    "serverless-http": "^1.6.0"
+    "express-validation": "^1.0.2",
+    "joi": "^14.3.1",
+    "serverless-http": "^1.6.0",
+    "swagger-jsdoc": "^3.2.7"
   },
   "devDependencies": {
-    "mocha": "^5.2.0",
+    "aws-sdk-mock": "^4.3.0",
+    "dynamodb-localhost": "0.0.7",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.10",
     "serverless-dynamodb-local": "^0.2.35",
     "serverless-offline": "^3.28.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "html",
+      "text"
+    ]
   }
 }
