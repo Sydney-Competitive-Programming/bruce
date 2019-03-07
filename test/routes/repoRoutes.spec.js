@@ -12,7 +12,7 @@ const getRoute = function (r) {
 describe('repo routes', function () {
     const playerId = 'tonka7su';
     const date = '02-02-2019';
-    const challengeId = '666';
+    const challengeId = 666;
     const code = "[open('y','a').write(' '.join(sorted(l[:-2].split(' '),key=lambda s:s.strip('\"').strip(\"'\").lower()))+'\n') for l in open('x').readlines()]";
 
    test('should submit a code snippit', function (done) {
