@@ -1,4 +1,4 @@
-# Sydney Competitive Programming 22 September 2018 - Practical Challenge
+# Sydney Competitive Programming 22 September 2018 - Practical Challenge [![CircleCI](https://circleci.com/gh/Sydney-Competitive-Programming/bruce.svg?style=svg)](https://circleci.com/gh/Sydney-Competitive-Programming/bruce)
 
 ## The Question
 
